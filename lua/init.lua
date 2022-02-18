@@ -1,3 +1,9 @@
+-- set keybinding
+local ok, _ = pcall(require, 'settings.keymaps')
+if not ok then
+  -- No cargado el archivo de atajo de teclado
+end
+
 -- set provider settings for fast startup
 local ok, _ = pcall(require, 'settings.providers')
 if not ok then

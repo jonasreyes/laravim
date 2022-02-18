@@ -17,10 +17,6 @@ vim.o.updatetime = 250
 vim.o.expandtab = true
 vim.bo.expandtab = true
 
--- Identación en el nivel adecuado
--- vim.o.shiftwidth = 2
--- vim.wo.shiftwidth = 2 
-
 -- Configuración especial para cada archivo en la carpeta ftplugin.
 vim.o.softtabstop = 4
 vim.bo.softtabstop = 4
@@ -35,9 +31,6 @@ vim.o.hlsearch = true
 
 -- Ignorecase ins search pattern
 vim.o.ignorecase = true
-
--- Swapfiles are nice
--- vim.o.swapfiles = true
 
 -- Swapfile config
 vim.o.shortmess = vim.o.shortmess .. 'c'
