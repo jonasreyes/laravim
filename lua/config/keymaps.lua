@@ -25,11 +25,13 @@ keymap("n", "<C-j", "<C-w>j", opts)
 keymap("n", "<C-k", "<C-w>k", opts)
 keymap("n", "<C-l", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":Lex 20<cr>", opts)
 
 -- Save and Exit
 keymap("n", "<leader>w", ":w<cr>", opts)
-keymap("n", "<leader>q", ":q<cr>", opts)
+-- El comando de salida permite salir sin guardar cambios.. 
+-- Quien desee guardar cambios obviamente ejecutará la orden de salvar.
+keymap("n", "<leader>q", ":q!<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -50,6 +52,7 @@ keymap("i", "jk", "<ESC>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- En modo visual presionando la tecla Alt+{j,k} sobre una linea, la desplaza hacia arriba o hacia abajo.
 -- Move text up and down on visual mode
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
